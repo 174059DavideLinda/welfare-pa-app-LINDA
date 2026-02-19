@@ -355,9 +355,9 @@ def pagina_login():
 
         col_u, col_p = st.columns(2)
         with col_u:
-            username = st.text_input("👤 Nome Utente", placeholder="es. davide")
+            username = st.text_input("👤 Nome Utente")
         with col_p:
-            password = st.text_input("🔑 Password", type="password", placeholder="••••••••")
+            password = st.text_input("🔑 Password", type="password")
 
         st.markdown("<div style='height:0.3rem'></div>", unsafe_allow_html=True)
 
