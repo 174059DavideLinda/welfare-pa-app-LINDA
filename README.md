@@ -8,5 +8,5 @@ CITTADINO:
   -CIE CA00000AA 1234
 
 ADMIN:
-  -nome utente: mario 
-  -password: rossi
+  -nome utente: mario.rossi
+  -password: Welf@re_Admin2026!
