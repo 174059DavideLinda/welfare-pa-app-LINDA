@@ -295,11 +295,13 @@ def init_auth_db():
         data_creazione TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
         ultimo_accesso TIMESTAMP
     )''')
-    c.execute("SELECT COUNT(*) FROM admin_users WHERE username = ?", ('davide',))
+    
+    c.execute("SELECT COUNT(*) FROM admin_users WHERE username = ?", ('mario.rossi',))
     if c.fetchone()[0] == 0:
+        
         c.execute('''INSERT INTO admin_users (username, password_hash, nome_completo, ruolo)
                      VALUES (?, ?, ?, ?)''',
-                  ('davide', hash_password('linda'), 'Davide — Amministratore Principale', 'superadmin'))
+                  ('mario.rossi', hash_password('Welf@re_Admin2026!'), 'Mario Rossi — Amministratore Principale', 'superadmin'))
     conn.commit()
     conn.close()
 
