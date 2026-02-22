@@ -1,6 +1,5 @@
 import streamlit as st
 
-# Configurazione della pagina principale
 st.set_page_config(
     page_title="Hub - Sistema Welfare PA",
     page_icon="🇮🇹",
@@ -8,7 +7,6 @@ st.set_page_config(
     initial_sidebar_state="expanded"
 )
 
-# Stile minimale per la Home
 st.markdown("""
 <style>
     @import url('https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@300;400;600;700&display=swap');
@@ -31,13 +29,11 @@ st.markdown("""
 </style>
 """, unsafe_allow_html=True)
 
-# Intestazione
 st.markdown('<div class="main-title">🇮🇹 Sistema Integrato Welfare PA</div>', unsafe_allow_html=True)
 st.markdown('<div class="sub-title">Hub centralizzato per l\'erogazione e la gestione delle agevolazioni pubbliche</div>', unsafe_allow_html=True)
 
 st.markdown("---")
 
-# Box informativi
 col1, col2 = st.columns(2)
 
 with col1:
@@ -58,13 +54,12 @@ with col2:
 
 st.markdown("---")
 
-# Istruzione per la navigazione
 st.success("👈 **Usa il menu laterale a sinistra per accedere alle due aree dell'applicazione.**")
 
-# Footer istituzionale
 st.markdown("""
 <div style="text-align:center; color:#aaa; font-size:0.8rem; padding-top: 3rem;">
     Progetto Universitario 2026 · Simulazione Portale Servizi Pubblici<br>
     <em>Sviluppato secondo le linee guida AGID e i principi del GDPR</em>
 </div>
+
 """, unsafe_allow_html=True)
