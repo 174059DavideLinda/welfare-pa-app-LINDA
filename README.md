@@ -1,5 +1,5 @@
 Accessibile online ai seguenti link:
-APP: welfare-pa-app-adm1n-wwhhpsbnvuwagzjsvkieyz.streamlit.app/
+APP: https://welfare-pa.streamlit.app/
 
 CREDENZIALI DI PROVA 
 CITTADINO:
